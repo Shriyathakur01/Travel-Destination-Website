@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASALMERdocument</title>
+    <style>
+        * {
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .header {
+            background-color: rgb(15, 24, 33);
+            padding: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .head {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            padding: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .besttimetogo {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+        .besttimetogo a {
+            color: white;
+            border: none;
+            text-decoration: none;
+        }
+        .besttimetogo a:hover {
+            background-color: rgb(36, 47, 58);
+            padding: 10px;
+        }
+        .venue {
+            padding-left: 130px;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+        .slider-container {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-image: url('JAISALMERMAIN.JPG');
+            
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            border-radius: 10px;
+            color: #333;
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 300px;
+            padding: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card img {
+            width: 100%;
+            transition-timing-function: ease-out;
+            border-radius: 10px;
+            height: 200px;
+        }
+        #btn {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size: medium;
+            cursor: pointer;
+        }
+        #exbtn {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size: medium;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translatey(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Styles for the automatic slider */
+        .slider-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding-bottom: 130px;
+            padding-top: 0spx;
+        }
+
+        .slider {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            padding-bottom: 50px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            display: block;
+            border: none;
+            height: 400px;
+        }
+        .text-image{
+         height:500px;
+         padding:0px;
+         width:45%;
+         padding-top: 190px;
+         color: white;
+       }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- Image Slider Section -->
+
+    <div class="slider-container">
+        <br><br>
+        <div class="text-image">
+            <h1>JAISALMER</h1><br>
+            <h3>
+                Jaisalmer, known as the "Golden City," is a mesmerizing destination in Rajasthan, India, celebrated for its golden sand dunes and magnificent forts. Dominated by the majestic Jaisalmer Fort, a UNESCO World Heritage Site, the city offers a rich tapestry of history and culture. Its labyrinthine streets are lined with intricately carved havelis, such as Patwon Ki Haveli and Salim Singh Ki Haveli.</h3>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://wallup.net/wp-content/uploads/2019/09/7255-jaisalmer-fort.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="https://imgcld.yatra.com/ytimages/image/upload/v1462942314/Jaisalmer_History.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="https://wallpaperaccess.com/full/6039568.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="things to do">
+        <div class="head">
+            THINGS TO DO
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/8d/21/ba/8d21bae005ed57a147753e9d8ca8311d.jpg">
+                <h3>JAISALMER FORT</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7-10AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/942152278/photo/gadisar-lake-at-jaisalmer-rajasthan-at-sunrise-with-ancient-temples-and-archaeological-ruins.jpg?s=612x612&w=0&k=20&c=HvhbHZ8HH_lAjAAI2pmqL4mUipyyAwy31qp5jjKQTO0=">
+                <h3>GADISAR LAKE</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>9-10AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://thirdeyetraveller.com/wp-content/uploads/patwon-ki-haveli-kathoris-patwa-haveli-museum-jaisalmer-3-of-18-1536x1152.jpg">
+                <h3>PATWON KI HAVELI</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>Around 7 AM</button><br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://imgcld.yatra.com/ytimages/image/upload/v1462165348/Jaisalmer-Sam_Sand_Dunes1.jpg">
+                <h3>SAM SAND DUNES</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>6-10AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank">
+                    <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                        <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                    </a>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://thirdeyetraveller.com/wp-content/uploads/bada-bagh-jaisalmer-golden-cenotaphs-7-of-12.jpg">
+                <h3>BADA BAGH</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>Around 8-11AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://jaisalmertourism.co.in/images/places-to-visit/headers/vyas-chhatri-jaisalmer-timings-entry-fee-jaisalmer-tourism-header-cr-pierre-doyen.jpg">
+                <h3>VYAS CHHATRI</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>8AM-11AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://edge.ixigo.com/ixi-api/img/511a3ed4e4b015f8368779f4_600x315.jpg">
+                <h3>KULDHARA VILLAGE</h3>
+                <br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>5-6AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://mysterioustrip.com/wp-content/uploads/2023/08/Nathmal-Ki-Haveli.webp">
+                <h3>NATHMAL KI HAVELI</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>6AM</button>
+                <br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://www.tourmyindia.com/images/salim-singh-ki-haveli-1.jpg">
+                <h3>SALIM SINGH KI HAVELI</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>6AM</button>
+                <br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function show_slide(index) {
+            const offset = -index * 100;
+            document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+        }
+
+        function next_slide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            show_slide(currentIndex);
+        }
+
+        setInterval(next_slide, 2000);
+    </script>
+</body>
+</html>
