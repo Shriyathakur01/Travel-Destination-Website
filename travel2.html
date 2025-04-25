@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="travel2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jetset Journeys</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<nav>
+    <div class="container1">
+        <a class="brand" href="#">Jets<span class="letter">et</span> Journe<span class="letter">ys.</span></a>
+        <ul class="nav-links">
+            <li><a href="#explore">EXPLORE</a></li>
+            <li><a href="#about-us">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+            <li><a href="#loginModal" class="login-btn">LOGIN/SIGN-UP</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h2>Login</h2>
+      <form id="loginForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <p>Don't have an account yet ?
+          <div>
+            <a href="login.html">Sign-up.</a>
+          </div>
+          </p>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+
+  </div>
+</div>
+
+
+
+
+
+<header class="hero">
+  <div id="search-results" class="search-results"></div>
+    <div class="hero-text">
+        <h1>Lets Discover Some New Adventures!</h1>
+        <p>Your journey begins here.</p>
+      
+        <div class="search">
+          <input placeholder="Search..." type="text" style="font-size: 15px;">
+          <button type="submit" style="font-size: 15px;">Go</button>
+        </div>
+        
+        <a href="#explore" class="btn">DISCOVER MORE</a>
+    </div>
+</header>
+
+<section id="explore" class="destinations">
+  <b><h1 style="color: black; font-weight: bolder;" class="discover-places">Discover Places & Plan Your Holidays!</h1></b>
+  <b><p class="trip-initiary">
+    Planning your next vacation? Try one of these exotic and comfortable travel ideas to make your holiday memorable. 
+    Whether a beach vacation, a relaxing family holiday, an adventurous trek or a heritage walk, 
+    plan the most appropriate itinerary.</p></b>
+    <div class="container">
+        <div class="card" onclick="location.href='beaches.html';">
+            <img src="beaches.jpg" alt="Destination 1">
+            <h2>Beach Destinations</h2>
+            <p>Imagine strolling on a pristine beach and relishing incredible seafood without a worry in the world! 
+              Does that sound like your dream vacation? Plan a holiday to a beach destination and enjoy adrenaline 
+              pumping sports activities with your loved ones.
+            </p>
+            <p class="explore" >EXPLORE</p>
+           
+        </div>
+        <div class="card" onclick="location.href='mountainopenn.html';">
+            <img src="hills & mountains.jpg" alt="Destination 2">
+            <h2>Hills & Mountains</h2>
+            <p>Answer the call of the mountains with our specially curated holiday ideas. 
+              Treat the nature lover in you to the serene bliss of lofty hills and explore hidden 
+              gems on an epic adventure.</p>
+            <p class="explore">EXPLORE</p>
+        </div>
+        <div class="card" onclick="location.href='deserts.html';">
+            <img src="deserts.jpg" alt="Destination 3">
+            <h2>Deserts</h2>
+            <p>Deserts are more than just endless sands; they’re nature’s treasure chests, brimming with hidden life and stories. 
+              Ready to uncover the mysteries of the sands</p>
+            <p class="explore">EXPLORE</p>
+            
+        </div>
+        <div class="card" onclick="location.href='islands.html';">
+          <img src="islands.jpg" alt="Destination 4">
+          <h2>Islands</h2>
+          <p>This name paints islands as sanctuaries of discovery, where the horizons are endless, and every shore holds new stories. 
+            Imagine untouched beaches, vibrant coral reefs, and the rich traditions of island communities.
+            Ready to set sail for an island escape? </p>
+          <p class="explore">EXPLORE</p>
+      </div>
+      <div class="card" onclick="location.href='historical.html';">
+        <img src="historical-place.jpg" alt="Destination 5">
+        <h2>Historical Places</h2>
+        <p>Imagine walking through ancient ruins, majestic castles, and hallowed battlegrounds, each telling a different story from the annals of history. 
+           Where every structure holds a piece of the past, waiting to be discovered. 
+           Ready to embark on a historical journey?</p>
+        <p class="explore">EXPLORE</p>
+     </div>
+     <div class="card" onclick="location.href='wildlifeopen.html';">
+      <img src="wildlife.avif" alt="Destination 6">
+      <h2>Wildlife</h2>
+      <p>Embark on an unforgettable journey into the heart of nature's sanctuaries.
+        From the roaring lions of the Serengeti to the vibrant parrots of the Amazon, let the rhythm of the wilderness guide your adventure.</p>
+      <p class="explore">EXPLORE</p>
+     </div>
+     <div class="card" onclick="location.href='heritage.html';">
+      <img src="heritage.avif" alt="Destination 7">
+      <h2>Heritage</h2>
+      <p>Step into the footsteps of the past.
+        Travel through lands where ancient traditions, stories, and artistry come alive, connecting you to the rich tapestry of human history.
+        Dive deep into the heritage of humanity and let your travels become a bridge across time.</p>
+      <p class="explore">EXPLORE</p>
+     </div>
+     <div class="card" onclick="location.href='arcticopen.html';">
+      <img src="frozen.avif" alt="Destination 8">
+      <h2>Frozen Frontiers</h2>
+      <p>Journey to the edge of the world and step into the Frostbound Realms. 
+        Where every icy breath of wind tells a tale of survival and majesty. Let your travels through this pristine wilderness ignite your spirit of adventure and awe.</p>
+      <p class="explore">EXPLORE</p>
+    </div>
+    <div class="card" onclick="location.href='mountainopen.html';">
+      <img src="pilgrimage.jpg" alt="Destination 9">
+      <h2>Pilgrimage spots</h2>
+      <p>From the Ganges to the Vatican, Mecca to Bodh Gaya, the world's pilgrimage sites weave humanity's shared yearning for the sacred.With each step, leave behind the noise of the world and walk toward the divine whispers awaiting at every holy ground.</p>
+      <p class="explore">EXPLORE</p>
+    </div>
+    
+    </div>
+</section>
+
+<div class="about"id="about-us" >
+  <div class="about2">
+    <img src="about-us.jpg" height="450px" width="100%">
+  </div>
+  <div class="about3" >
+    <b><h2 style="color: #007bff; font-weight: bolder;" >ABOUT US</h2></b>
+    <h1>Welcome to Jetset Journeys!</h1>
+    <p class="about-text">
+
+      Your ultimate guide to exploring the world! We are a passionate team of travel enthusiasts dedicated to helping you discover the beauty and diversity of our planet.<br>
+      Our Mission is to inspire and empower travelers of all kinds whether you're seeking thrilling adventures, serene retreats, or cultural experiences.<br>
+      With carefully curated travel guides, tips, and insights, we aim to make your journey seamless and unforgettable.<br>
+      At Jetset Journeys, we believe that travel enriches lives, broadens horizons, and creats lasting memories. Join us as we uncover hidden gems, share personal stories, and connect with fellow wanderers.<br>
+      Let's embark on this incredible journey together, one destination at a time!<br>
+      Happy Travels!
+      
+      
+      
+    </p>
+  </div>
+</div>
+
+<div class="footer2.0">
+  <footer id="contact" class="footer" >
+    <div class="container3">
+        <p> <i class="fa-solid fa-envelope"></i> Contact us: jetsetjourney@gmail.com</p>
+        <p>&copy; 2024 jetsetjourney</p>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+</div>
+<script>
+  
+const searchInput = document.querySelector('.search input');
+const searchButton = document.querySelector('.search button');
+
+function performSearch() {
+    const query = searchInput.value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    let firstMatch = null;
+
+    cards.forEach(card => {
+        const title = card.querySelector('h2').textContent.toLowerCase();
+        const description = card.querySelector('p').textContent.toLowerCase();
+
+        if (title.includes(query) || description.includes(query)) {
+            card.style.display = 'block';
+            if (!firstMatch) {
+                firstMatch = card; 
+            }
+        } else {
+            card.style.display = 'none';
+        }
+    });
+
+    
+    if (firstMatch) {
+        firstMatch.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center', 
+        });
+    } else {
+        alert('No matching results found.'); 
+    }
+}
+
+searchButton.addEventListener('click', performSearch);
+
+searchInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault(); 
+        performSearch(); 
+    }
+});
+
+const aboutUsLink = document.querySelector('a[href="#about-us"]');
+
+
+const aboutUsSection = document.getElementById('about-us');
+
+
+aboutUsLink.addEventListener('click', function (event) {
+    event.preventDefault(); 
+    aboutUsSection.scrollIntoView({
+        behavior: 'smooth', 
+        block: 'start',     
+    });
+});
+
+
+const exploreLink = document.querySelector('a[href="#explore"]');
+
+
+const exploreSection = document.getElementById('explore');
+
+
+exploreLink.addEventListener('click', function (event) {
+    event.preventDefault(); 
+    exploreSection.scrollIntoView({
+        behavior: 'smooth', 
+        block: 'start',    
+    });
+});
+
+
+</script> 
+
+</body>
+</html>
