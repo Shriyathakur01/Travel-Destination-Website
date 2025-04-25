@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        font-family:'Lato' , sans-serif;
+        margin: 0px;
+        padding: 0px;
+    }
+    .header{
+        height:auto;
+            width: auto;
+            background-color: rgb(15, 24, 33);
+            color: white;
+            text-align: center;
+            padding: 30px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 20px;
+    }
+    .card{
+        border-radius: 10px;
+        color:rgb(15, 24, 33)  ;
+        background-color: white;
+        border: 10px;
+        width: 300px;
+        padding: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+     }
+    .card img{
+        width: 100%;
+        border-radius: 10px;
+        transition-timing-function: ease-out;
+        height: 200px;
+        }
+    #btn{
+        background-color: black;
+        color: white;
+        padding:10px;
+        font-weight: bolder;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+    #exbtn{
+        background-color: white;
+        color: black;
+        padding: 10px;
+        font-weight: bolder;
+        border-radius: 10px;
+        
+    }
+    .card:hover {
+        transform: translatey(-8px); 
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        #exbtn1_1{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #exbtn2{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #exbtn3_3{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            cursor: pointer;
+            font-weight:bolder;
+            border-radius: 10px;
+        }
+        #exbtn4_4{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #exbtn5{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #exbtn6{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #exbtn7{
+            background-color: white;
+            color: black;
+            padding:10px;
+            font-weight:bolder;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #exbtn8{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+
+        @media (max-width: 1024px) {
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+       }
+
+        @media (max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        .card {
+            width: 90%;
+        }
+       }
+    </style>
+</head>
+<body >
+    <div class="header">
+        <h1>"Beaches: where the sun kisses the sea and the waves whisper tranquility." </h1>
+        <h4>Beaches are nature’s haven where the rhythm of the waves sets your soul at ease. They offer the perfect escape from the hustle and bustle of daily life, inviting you to bask in the warmth of the sun, feel the soft sand between your toes, and listen to the calming whispers of the ocean. </h4>
+    <br>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2015/03/09/18/34/beach-666122_640.jpg">
+            <h3>MALDIVES</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn1_1">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            <script>
+                document.getElementById("exbtn1_1").onclick = function () {
+                    location.href = "MALDIVESBEACHES.HTML"; 
+                }
+            </script>
+        </div>
+        <div class="card">
+            <img src="https://media.meer.com/attachments/8507a4d67a2d6c38ec30e81cca64997244ba2a5b/store/fill/1090/613/82d5cbea2917df623eb8fb15f4cbf034becfeb773c4ff1212cbe1274b737/The-stunning-beach-of-Goa.jpg">
+            <h3>GOA</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn4_4">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            <script>
+                document.getElementById("exbtn4_4").onclick = function () {
+                    location.href = "GOABEACHES.HTML"; 
+                }
+            </script>
+        </div>
+        <div class="card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/179/915/685/photography-water-reflection-bali-wallpaper-preview.jpg">
+            <h3>BALI</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn3_3">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            <script>
+                document.getElementById("exbtn3_3").onclick = function () {
+                    location.href = "BALIBEACHES.HTML"; 
+                }
+            </script>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="https://thumbs.dreamstime.com/b/pondicherry-has-beautiful-coast-india-famous-unexplored-beaches-beautiful-coastline-india-123124828.jpg">
+            <h3>PONDICHERRY</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn2">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            <script>
+                document.getElementById("exbtn2").onclick = function () {
+                    location.href = ""; 
+                }
+            </script>
+        </div>
+        <div class="card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/209/448/927/ocean-sand-sandy-beach-kovalam-wallpaper-preview.jpg">
+            <h3>KOVALAM</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn5">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            <script>
+                document.getElementById("exbtn5").onclick = function () {
+                    location.href = ""; 
+                }
+            </script>
+        </div>
+        <div class="card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/198/143/668/ao-nang-krabi-thailand-bay-ocean-boat-rocks-mountains-rock-monolith-wallpaper-preview.jpg">
+            <h3>KRABI</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            <script>
+                document.getElementById("exbtn1").onclick = function () {
+                    location.href = ""; 
+                }
+            </script>
+        </div>
+    </div>   
+         <div class="container">
+        <div class="card">
+            <img src="https://www.sidzcottage.com/images/playonbeachimage.jpg">
+            <h3>ALIBAUG</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn2">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            <script>
+                document.getElementById("exbtn2").onclick = function () {
+                    location.href = ""; 
+                }
+            </script>
+        </div>
+        <div class="card">
+            <img src="https://t3.ftcdn.net/jpg/01/16/39/04/360_F_116390418_fjvPvAWcWfgDCYAJsWiT5sni5ukzcUO8.jpg">
+            <h3>GOKARNA</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn3">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            <script>
+                document.getElementById("exbtn3").onclick = function () {
+                    location.href = ""; 
+                }
+            </script>
+        </div>
+        
+        <div class="card">
+            <img src="https://t3.ftcdn.net/jpg/08/76/20/48/360_F_876204879_WqEHaeaaDLd5UJRu0RVHMt5sbxMPgdtS.jpg">
+            <h3>VARKALA</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn4">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            <script>
+                document.getElementById("exbtn4").onclick = function () {
+                    location.href = ""; 
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
