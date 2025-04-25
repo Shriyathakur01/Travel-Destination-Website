@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldivesdocument</title>
+    <style>
+        * {
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .header {
+            background-color: rgb(15, 24, 33);
+            padding: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .head {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            padding: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .besttimetogo {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+        .besttimetogo a {
+            color: white;
+            border: none;
+            text-decoration: none;
+        }
+        .besttimetogo a:hover {
+            background-color: rgb(36, 47, 58);
+            padding: 10px;
+        }
+        .venue {
+            padding-left: 130px;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+        .slider-container {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-image: url('maldivesback.jpg');
+            
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            border-radius: 10px;
+            color: #333;
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 300px;
+            padding: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card img {
+            width: 100%;
+            transition-timing-function: ease-out;
+            border-radius: 10px;
+            height: 200px;
+        }
+        #btn {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size: medium;
+            cursor: pointer;
+        }
+        #exbtn {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size:medium;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translatey(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Styles for the automatic slider */
+        .slider-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding-bottom: 130px;
+            padding-top: 0spx;
+        }
+
+        .slider {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            padding-bottom: 50px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            display: block;
+            border: none;
+            height: 400px;
+        }
+        .text-image{
+         height:500px;
+         padding:0px;
+         width:45%;
+         padding-top: 190px;
+         color: white;
+       }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- Image Slider Section -->
+
+    <div class="slider-container">
+        <br><br>
+        <div class="text-image">
+            <h1>MALDIVES</h1><br>
+            <h3>The Maldives is a tropical paradise known for its crystal-clear waters, powdery white sand beaches,
+                 and vibrant coral reefs. With over 1,000 islands scattered across the Indian Ocean, it offers an idyllic escape
+                  for nature lovers and adventure seekers alike. Luxury resorts line the beaches, offering private overwater bungalows and world-class
+                   services. The rich marine life, including colorful fish and gentle sea turtles, make it a top destination for diving and snorkeling.
+                    Whether you're lounging in the sun or exploring the underwater world, 
+                the Maldives is the ultimate retreat for relaxation and beauty.</h3>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://images.pexels.com/photos/3601426/pexels-photo-3601426.jpeg?cs=srgb&dl=pexels-asadphoto-3601426.jpg&fm=jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="https://w0.peakpx.com/wallpaper/922/892/HD-wallpaper-maldives-beach-scenery-13.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="https://images.pexels.com/photos/358358/pexels-photo-358358.jpeg?cs=srgb&dl=pexels-pixabay-358358.jpg&fm=jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="things to do">
+        <div class="head">
+            THINGS TO DO
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/31/aa/d8/31aad8d2b6a429fe22b7f41c6147caa6.jpg">
+                <h3>MALE'</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>6-8AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://eijfa9g4ivj.exactdn.com/wp-content/uploads/2023/08/fulhadhoo_-59-1024x768.jpg?strip=all&lossy=1&ssl=1">
+                <h3>FULHADHOO</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://thumbs.dreamstime.com/b/addu-atoll-seenu-atoll-south-most-atoll-maldives-islands-previously-also-known-as-56908681.jpg">
+                <h3>ADDU CITY</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>Around 7AM-7PM</button><br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://fashionablyfoody.wordpress.com/wp-content/uploads/2017/04/gan-island.jpg?w=1568">
+                <h3>GAN</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://halal-travels.sgp1.digitaloceanspaces.com/images/original/ostrov-Dhangethi-Maledivy-2-scaled-1708241117521.jpg">
+                <h3>DHANGETHI</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>Around 7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMKR8cwppFLGmxYRMKo6wJAPhRS-pcLor2ruTBK=w675-h390-n-k-no">
+                <h3>GAAFU DHAALU ATOLL </h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/06/28/f61611650b50ae514db97c6208bc8647_1000x1000.jpeg">
+                <h3> MAAFUSHI ISLAND</h3>
+                <br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://simply-madeleine.com/wp-content/uploads/2022/11/Sun-Island-Resort-and-Spa-Hotel-Review.jpg">
+                <h3>HUVAHENDHOO ISLAND</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button>
+                <br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://static.toiimg.com/photo/msid-65230395,width-96,height-65.cms">
+                <h3>MALDIVES GLOWING BEACH</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7PM-10PMS</button>
+                <br>
+                <br>
+                 <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function show_slide(index) {
+            const offset = -index * 100;
+            document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+        }
+
+        function next_slide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            show_slide(currentIndex);
+        }
+
+        setInterval(next_slide, 2000);
+    </script>
+</body>
+</html>
