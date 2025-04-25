@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            font-family:'Lato' , sans-serif;
+        }
+        .header{
+            height:auto;
+            width: auto;
+            background-color: rgb(15, 24, 33);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 100%;
+            gap: 20px;
+            padding: 20px;
+        }
+        .container h3{
+          color: #333;
+        }
+        .card{
+            border-radius: 10px;
+            color:rgb(15, 24, 33)  ;
+            background-color: white;
+            border: 1px;
+            width: 300px;
+            padding: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+         }
+        .card img{
+            width: 300px; height:200px;
+            border-radius: 10px;
+            transition-timing-function: ease-out;
+            }
+        
+        .card:hover {
+            transform: translatey(-8px); 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+            } 
+        #btn{
+            background-color: black;
+            border-color: black;
+            color: white;
+            padding: 10px;
+            font-weight:bold;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #exbtn1{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #exbtn2{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #exbtn3{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            cursor: pointer;
+            font-weight:bolder;
+            border-radius: 10px;
+        }
+        #exbtn4{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #exbtn5{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #exbtn6{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #exbtn7{
+            background-color: white;
+            color: black;
+            padding:10px;
+            font-weight:bolder;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #exbtn8{
+            background-color: white;
+            color: #333;
+            padding:10px;
+            font-weight:bolder;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .h3{
+            font-weight: bold;
+        } 
+
+        @media (max-width: 1024px) {
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+       }
+
+        @media (max-width: 768px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+
+        .card {
+            width: 90%;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Tranquil Hill Stations for a Refreshing Escape into Nature's Embrace</h1>
+        <h4>Hill Stations - Immerse yourself in the crisp mountain air, marvel at breathtaking vistas, and get lost in the enchanting atmosphere for a rejuvenating escape.</h5><br>
+    </div>
+    <br>
+    <div class="container">
+        <div class="card">
+            <img src="darjeeling.webp">
+            <h3>DARJEELING</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn1">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+            <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            
+            <script>
+                document.getElementById("exbtn1").onclick = function () {
+                    location.href = "darjeelingmountainexplore.html"; 
+                }
+            </script>
+        </div>
+
+        <div class="card">
+            <img src="https://t4.ftcdn.net/jpg/06/78/77/91/360_F_678779128_fBE2MxGMKeCkbmKTLoQ11s0GG9hof6vR.jpg">
+            <h3>SRINAGAR</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn6">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            
+            <script>
+                document.getElementById("exbtn6").onclick = function () {
+                    location.href = "SRINAGARMOUNTAIN.HTML"; 
+                }
+        </script>
+            </button>
+        </div>
+        <div class="card">
+            <img src="Manali.jpg">
+            <h3>MANALI</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn8">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            
+            <script>
+                document.getElementById("exbtn8").onclick = function () {
+                    location.href = "MANALIMOUNTAIN.HTML"; 
+                }
+        </script>
+        </div>
+       
+       
+    </div>
+    <div class="container">
+        <div class="card">            
+            <img src="https://t.eucdn.in/tourism/lg/mussoorie-7488728.webp">
+            <h3>MUSSOORIE</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn4">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            
+            <script>
+                document.getElementById("exbtn4").onclick = function () {
+                    location.href = "mussoriemountain.html"; 
+                }
+        </script>
+        </div>
+        <div class="card">            
+            <img src="https://t4.ftcdn.net/jpg/01/68/68/51/360_F_168685105_WyTMcrllqAjOnnWKNXwxyod2JCMBiEQ5.jpg">
+            <h3>GULMARG</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn5">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            
+            <script>
+                document.getElementById("exbtn5").onclick = function () {
+                    location.href = "GULMARGMOUNTAIN.HTML"; 
+                }
+        </script>
+        </div>
+
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1155829196/photo/pahalgao-valley-kashmir.jpg?s=612x612&w=0&k=20&c=xn-kYE2VSCb0zdHGZfJG8MFsOqko25F_9qdrUdPlnU8=">
+            <h3>PAHALGAM</h3>
+            <br>
+            <br><br>
+            <button type="button" id="exbtn2">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            
+            <script>
+                document.getElementById("exbtn2").onclick = function () {
+                    location.href = "pahalgammountain.html"; 
+                }
+        </script>
+        </div>
+    </div>   
+     <div class="container">
+        <div class="card">
+           
+            <img src="ladakh.jpg">
+            <h3>LADAKH</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn7">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            
+            <script>
+                document.getElementById("exbtn7").onclick = function () {
+                    location.href = "LADAKHMOUNTAIN.HTML"; 
+                }
+        </script>
+        </div>
+        <div class="card">
+            <img src="https://c0.wallpaperflare.com/preview/338/211/663/india-nainital.jpg">
+            <h3>NANITAL</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn3">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            
+            <script>
+                document.getElementById("exbtn3").onclick = function () {
+                    location.href = "nanitalmountainexplore.html"; 
+                }
+        </script>
+        </div>
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1218830644/photo/beautiful-lake.jpg?s=612x612&w=0&k=20&c=r5or5KmtrZE5P93cDPG2FzxWQxhZA0qeTInoXJ7qXxA=">
+            <h3>LEH</h3>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="exbtn8">EXPLORE</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                <button type="button" id="btn" style="border: none;">BOOKINGS</button>
+            </a>
+            
+            <script>
+                document.getElementById("exbtn8").onclick = function () {
+                    location.href = "LEHMOUNTAIN.HTML"; 
+                }
+        </script>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
