@@ -12,6 +12,7 @@ Welcome to the **Travel Destination Website**—your passport to the world's mos
 
 
 **OUR MISSION**
+
 We believe that travel is more than just visiting places; it’s about creating memories that last a lifetime. Our platform is designed to inspire, 
 guide, and connect travelers, making sure you have everything you need—from destination insights to practical tips.
 
