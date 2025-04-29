@@ -1,8 +1,8 @@
 # Travel Destination Website
 
-Welcome to the **Travel Destination Website**—your passport to the world's most incredible places! 🌍 Whether you're planning your next adventure or just daydreaming, we provide the best destinations, travel tips, and guides.
+Welcome to the **JetSet Journeys**—your passport to the world's most incredible places! 🌍 Whether you're planning your next adventure or just daydreaming, we provide the best destinations, travel tips, and guides.
 
-## Features
+## Features:
 
 - 🌅 Explore breathtaking travel destinations with stunning images and detailed descriptions.
 - 🏕️ Find curated travel experiences, from serene beaches to bustling cities.
