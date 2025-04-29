@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldivesdocument</title>
+    <style>
+        * {
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .header {
+            background-color: rgb(15, 24, 33);
+            padding: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .head {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            padding: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .besttimetogo {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+        .besttimetogo a {
+            color: white;
+            border: none;
+            text-decoration: none;
+        }
+        .besttimetogo a:hover {
+            background-color: rgb(36, 47, 58);
+            padding: 10px;
+        }
+        .venue {
+            padding-left: 130px;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+        .slider-container {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-image: url('GOA MAIN.JPG');
+            
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            border-radius: 10px;
+            color: #333;
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 300px;
+            padding: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card img {
+            width: 100%;
+            transition-timing-function: ease-out;
+            border-radius: 10px;
+            height: 200px;
+        }
+        #btn {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size: medium;
+            cursor: pointer;
+        }
+        #exbtn {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size:medium;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translatey(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Styles for the automatic slider */
+        .slider-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding-bottom: 130px;
+            padding-top: 0spx;
+        }
+
+        .slider {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            padding-bottom: 50px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            display: block;
+            border: none;
+            height: 400px;
+        }
+        .text-image{
+         height:500px;
+         padding:0px;
+         width:45%;
+         padding-top: 190px;
+         color: white;
+       }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- Image Slider Section -->
+
+    <div class="slider-container">
+        <br><br>
+        <div class="text-image">
+            <h1>GOA</h1><br>
+            <h3>Goa is a vibrant coastal paradise in India, famed for its stunning beaches, lively nightlife, and rich Portuguese heritage. The state's diverse attractions range from the bustling shores of Baga and Anjuna to the tranquil beauty of Palolem and Agonda. Visitors can explore historic landmarks like the Basilica of Bom Jesus and Fort Aguada, or enjoy water sports and beach parties.</h3>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://travelogyindia.b-cdn.net/storage/app/upload/calangute-beach-goa.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="https://revolvingcompass.com/wp/wp-content/uploads/2022/03/Anjuna_2.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1073481062_20190822145857.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="things to do">
+        <div class="head">
+            THINGS TO DO
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://travelogyindia.b-cdn.net/storage/app/upload/calangute-beach-goa.jpg">
+                <h3>CALANGUTE BEACH</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>6-8AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://www.adotrip.com/public/images/areas/master_images/60d0813807aff-Baga_Beach_In_Goa.jpg">
+                <h3>BAGA BEACH</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://revolvingcompass.com/wp/wp-content/uploads/2022/03/Anjuna_2.jpg">
+                <h3>ARJUNA BEACH</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>Around 7AM-7PM</button><br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1065727913_20190822150731.jpg">
+                <h3>FORT AGUADA</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>>
+            </div>
+            <div class="card">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1073481062_20190822145857.jpg">
+                <h3>BASILICA OF BOM JESUS</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>Around 7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://www.tourmyindia.com/socialimg/dudhsagar-falls-goa.jpg">
+                <h3>DUDHSAGAR FALLS </h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://www.mapsofindia.com/ci-moi-images/my-india/chapora-fort-goa.jpg">
+                <h3>CHAPORA FORT</h3>
+                <br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://static.toiimg.com/img/67466906/Master.jpg">
+                <h3>PALOLEM BEACH</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button>
+                <br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://www.hlimg.com/images/things2do/738X538/we_1523965671t.jpg">
+                <h3>SPICE PLANTATIONS</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7PM-10PMS</button>
+                <br>
+                <br>
+                 <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function show_slide(index) {
+            const offset = -index * 100;
+            document.querySelector('.slides').style.transform = translateX(${offset}%);
+        }
+
+        function next_slide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            show_slide(currentIndex);
+        }
+
+        setInterval(next_slide, 2000);
+    </script>
+</body>
+</html>
