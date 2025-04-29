@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALIdocument</title>
+    <style>
+        * {
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .header {
+            background-color: rgb(15, 24, 33);
+            padding: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .head {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            padding: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .besttimetogo {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+        .besttimetogo a {
+            color: white;
+            border: none;
+            text-decoration: none;
+        }
+        .besttimetogo a:hover {
+            background-color: rgb(36, 47, 58);
+            padding: 10px;
+        }
+        .venue {
+            padding-left: 130px;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+        .slider-container {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-image: url('BALIMAIN.JPG');
+            
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            border-radius: 10px;
+            color: #333;
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 300px;
+            padding: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card img {
+            width: 100%;
+            transition-timing-function: ease-out;
+            border-radius: 10px;
+            height: 200px;
+        }
+        #btn {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size: medium;
+            cursor: pointer;
+        }
+        #exbtn {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            font-size:medium;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translatey(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Styles for the automatic slider */
+        .slider-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding-bottom: 130px;
+            padding-top: 0spx;
+        }
+
+        .slider {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            padding-bottom: 50px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            display: block;
+            border: none;
+            height: 400px;
+        }
+        .text-image{
+         height:500px;
+         padding:0px;
+         width:45%;
+         padding-top: 190px;
+         color: white;
+       }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- Image Slider Section -->
+
+    <div class="slider-container">
+        <br><br>
+        <div class="text-image">
+            <h1>BALI</h1><br>
+            <h3>Bali is a tropical paradise known for its vibrant culture, stunning beaches, and lush landscapes. The island offers an array of experiences, from exploring ancient temples like Tanah Lot and Uluwatu, to immersing yourself in the arts and crafts of Ubud. Adventure seekers can trek up Mount Batur for a breathtaking sunrise or dive into the crystal-clear waters around Nusa Penida.</h3>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://th.bing.com/th/id/OIP.YfQeiyx70zoUNlEllxwoYQHaE5?rs=1&pid=ImgDetMain" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="https://wallpaperaccess.com/full/373636.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="https://wallpaperaccess.com/full/5672323.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="things to do">
+        <div class="head">
+            THINGS TO DO
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://a.cdn-hotels.com/gdcs/production21/d600/9f7c5530-7fd5-457c-82d9-7d44376e8020.jpg">
+                <h3>TEGALLALANG RICE TERRACES</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>6-8AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://wallpaperaccess.com/full/2466724.jpg">
+                <h3>UBUD</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://theworldtravelguy.com/wp-content/uploads/2020/11/DJI_0943_1200.jpg">
+                <h3>TANAH LOT TEMPLE</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>Around 7AM-7PM</button><br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://a.cdn-hotels.com/gdcs/production142/d1653/b667788d-ebdf-4b27-8bab-22bc59175055.jpg">
+                <h3>ULUWATU TEMPLE</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/93/c4/14/93c41418a0a5c954f07f6a2afda60274.jpg">
+                <h3>SEMINYAK</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>Around 7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://3.bp.blogspot.com/-gVUH1iAtm-Q/Uri0UGOrQdI/AAAAAAAAAiw/rV0T3-GHL78/s1600/Sunset-di-Kuta-Bali.jpg">
+                <h3>KUTA BEACH</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://www.tripsavvy.com/thmb/8Ww5Z9KpE398lxYBT0h7Zwdp9fI=/6500x4325/filters:fill(auto,1)/mount-batur-at-sunrise--bali--indonesia-722224239-3300fc8429e54365967357c040f7ba9e.jpg">
+                <h3> MOUNT BATUR</h3>
+                <br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://wallpaperaccess.com/full/2873360.jpg">
+                <h3>NUSA PENIDA</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7AM-7PM</button>
+                <br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://images.squarespace-cdn.com/content/v1/560dbc25e4b0969564758eb5/1499392411478-M0DJRNBXYLTEXFHXUQZR/Sacred+Monkey+Forest+%2B+www.thetravelpockets.com">
+                <h3>SACRED MONKEY FOREST SANCTUARY</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7PM-10PMS</button>
+                <br>
+                <br>
+                 <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function show_slide(index) {
+            const offset = -index * 100;
+            document.querySelector('.slides').style.transform = translateX(${offset}%);
+        }
+
+        function next_slide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            show_slide(currentIndex);
+        }
+
+        setInterval(next_slide, 2000);
+    </script>
+</body>
+</html>
