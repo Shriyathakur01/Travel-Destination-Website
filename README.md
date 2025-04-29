@@ -13,7 +13,6 @@ Welcome to the **JetSet Journeys**—your passport to the world's most incredibl
 
 **OUR MISSION**
 
-We believe that travel is more than just visiting places; it’s about creating memories that last a lifetime. Our platform is designed to inspire, 
-guide, and connect travelers, making sure you have everything you need—from destination insights to practical tips.
+We believe that travel is more than just visiting places; it’s about creating memories that last a lifetime. Our platform is designed to inspire, guide, and connect making sure you have everything you need—from destination insights to the best time you can explore Destinations.
 
 Join us in exploring the beauty, culture, and adventure that the world has to offer. Let’s make every journey extraordinary! ✨
