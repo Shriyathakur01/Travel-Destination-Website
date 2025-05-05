@@ -1,165 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BIKANERdocument</title>
-  <style>
-    * {
-      width: 100%;
-      font-family: 'Lato', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .header, .head, .besttimetogo {
-      background-color: rgb(15, 24, 33);
-      color: white;
-      display: flex;
-      justify-content: space-evenly;
-      padding: 20px;
-    }
-    .besttimetogo a, .header a {
-      color: white;
-      text-decoration: none;
-    }
-    .besttimetogo a:hover {
-      background-color: rgb(36, 47, 58);
-      padding: 10px;
-    }
-    .venue {
-      padding-left: 130px;
-    }
-    .slider-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f4f4f4;
-      padding-bottom: 130px;
-      padding-top: 0px;
-    }
-    .slider {
-      width: 80%;
-      max-width: 600px;
-      overflow: hidden;
-      border-radius: 10px;
-      padding-bottom: 50px;
-    }
-    .slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-    .slide {
-      min-width: 100%;
-      box-sizing: border-box;
-    }
-    .slide img {
-      width: 100%;
-      height: 400px;
-      display: block;
-      border: none;
-    }
-    .text-image {
-      height: 500px;
-      width: 45%;
-      padding-top: 190px;
-      color: white;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      padding: 20px;
-    }
-    .card {
-      border-radius: 10px;
-      background-color: white;
-      border: 1px solid #ddd;
-      width: 300px;
-      padding: 20px;
-      color: #333;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .card img {
-      width: 100%;
-      height: 200px;
-      border-radius: 10px;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-    #btn {
-      background-color: black;
-      color: white;
-      padding: 10px;
-      font-weight: bolder;
-      border-radius: 10px;
-      cursor: pointer;
-      border: none;
-    }
-    #exbtn {
-      background-color: white;
-      color: black;
-      padding: 10px;
-      font-weight: bolder;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKANERdocument</title>
+    <style>
+        * {
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .header {
+            background-color: rgb(15, 24, 33);
+            padding: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .head {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            padding: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .besttimetogo {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+        .besttimetogo a {
+            color: white;
+            border: none;
+            text-decoration: none;
+        }
+        .besttimetogo a:hover {
+            background-color: rgb(36, 47, 58);
+            padding: 10px;
+        }
+        .venue {
+            padding-left: 130px;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+        .slider-container {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-image: url('BIKANERMAIN.JPG');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            border-radius: 10px;
+            color: #333;
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 300px;
+            padding: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card img {
+            width: 100%;
+            transition-timing-function: ease-out;
+            border-radius: 10px;
+            height: 200px;
+        }
+        #btn {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #exbtn {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translatey(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Styles for the automatic slider */
+        .slider-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding-bottom: 130px;
+            padding-top: 0spx;
+        }
+
+        .slider {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            padding-bottom: 50px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            display: block;
+            border: none;
+            height: 400px;
+        }
+        .text-image{
+            height:500px;
+            padding:0px;
+            width:45%;
+            padding-top: 190px;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
 
-<!-- Image Slider Section -->
-<div class="slider-container">
-  <div class="text-image">
-    <h1>BIKANER</h1><br>
-    <h3>
-      Barmer, situated in the Thar Desert of Rajasthan, is a land of rugged beauty and rich cultural heritage.
-      Known for its vibrant folk music and dance, Barmer offers a glimpse into the traditional lifestyle of Rajasthan.
-    </h3>
-  </div>
-  <div class="slider">
-    <div class="slides">
-      <div class="slide">
-        <img src="https://pickyourtrail.com/blog/wp-content/uploads/2020/05/junagarh-fort-3184273_1920-1536x1100.jpg" alt="Image 1">
-      </div>
-      <div class="slide">
-        <img src="https://thrillingtravel.in/wp-content/uploads/2018/04/Kothari-Haveli_Bikaner-768x512.jpg" alt="Image 2">
-      </div>
-      <div class="slide">
-        <img src="https://roshanpanjiyara.com/wp-content/uploads/2019/08/Places-to-visit-in-Bikaner.jpg" alt="Image 3">
-      </div>
+
+    <!-- Image Slider Section -->
+
+    <div class="slider-container">
+        <br><br>
+        <div class="text-image">
+            <h1>BIKANER</h1><br>
+            <h3>Barmer, situated in the Thar Desert of Rajasthan, is a land of rugged beauty and rich cultural heritage. Known for its vibrant folk music and dance, Barmer offers a glimpse into the traditional lifestyle of Rajasthan. The town is famous for its intricately carved wooden furniture and colorful hand-embroidered textiles. The Barmer Fort and Kiradu Temples showcase the architectural brilliance of the region.</h3>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://pickyourtrail.com/blog/wp-content/uploads/2020/05/junagarh-fort-3184273_1920-1536x1100.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="https://thrillingtravel.in/wp-content/uploads/2018/04/Kothari-Haveli_Bikaner-768x512.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="https://roshanpanjiyara.com/wp-content/uploads/2019/08/Places-to-visit-in-Bikaner.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="things to do">
+        <div class="head">
+            THINGS TO DO
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Bikaner_fort_view_08.jpg">
+                <h3>JUNAGARH FORT</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>7-10AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://www.inditales.com/wp-content/uploads/2016/12/karni-mata-temple-facade.jpg">
+                <h3>KARNI MATA TEMPLE</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>9-10AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.8b92c5fd3aa5f2186cda0a66de5ddd83?rik=NuiFKw3Rx0sD6w&riu=http%3a%2f%2f2.bp.blogspot.com%2f-UHKB6dnaTZw%2fT3Hj4olI83I%2fAAAAAAAACLs%2fUHgz7o-AYxc%2fs1600%2fGajner-Palace-Bikaner.jpg&ehk=JrTc3GVgiRe8adx8WKfLCL1TUVzrPskTiO6XLuZUtnw%3d&risl=&pid=ImgRaw&r=0">
+                <h3>GAJNER PALACE</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>Around 7 AM</button><br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://www.gosahin.com/go/p/i/1565510692_lalgarh-palace-bikaner1.jpg">
+                <h3>LALLGARH PALACE</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>6-10AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank">
+                    <button type="button" id="btn" >UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://mediaindia.eu/wp-content/uploads/2019/02/IMG_2830.jpg">
+                <h3>RAMOURIA HAVELI</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>Around 8-11AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://wallpaperaccess.com/full/7969599.jpg">
+                <h3>PRACHINA MUSEUM</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>8AM-11AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.A?rik=k6RKCNM3zlO6sQ&riu=http%3a%2f%2fheritageofindia.in%2fwp-content%2fuploads%2f2022%2f11%2flaxmi-niwas-1.jpg&ehk=cXxsRRsDj4l6pczeW%2bx4eNjcgnW%2b9XhzF5AP6Ckr8cQ%3d&risl=&pid=ImgRaw&r=0">
+                <h3>LAXMI NIWAS PALACE</h3>
+                <br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>5-6AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/1e/73/b8/shri-laxminath-temple.jpg?w=1200&h=1200&s=1">
+                <h3>SHRI LAXMINATH TEMPLE</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>6AM</button>
+                <br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="https://www.tourism-rajasthan.com/wp-content/uploads/2022/03/Bhandasar_Jain_Temple_Bikaner-1536x1025.jpg">
+                <h3>BHANDASAR JAIN TEMPLE</h3><br>
+                <button type="button" id="exbtn">SUGGESTED TIME<br>6AM</button>
+                <br>
+                <br>
+                <a href="https://www.agoda.com/" target="_blank" style="text-decoration: none;">
+                    <button type="button" id="btn" style="border: none;">UNLOCK YOUR ADVENTURE</button>
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- Things to Do Section -->
-<div id="things-to-do">
-  <div class="head">THINGS TO DO</div>
-  <div class="container">
-    <!-- Cards go here (same as your original code) -->
-    <!-- For brevity, not repeating all cards here, they can be retained as-is -->
-  </div>
-</div>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
 
-<script>
-  const slides = document.querySelectorAll('.slide');
-  let currentIndex = 0;
+        function show_slide(index) {
+            const offset = -index * 100;
+            document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+        }
 
-  function show_slide(index) {
-    const offset = -index * 100;
-    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
-  }
+        function next_slide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            show_slide(currentIndex);
+        }
 
-  function next_slide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    show_slide(currentIndex);
-  }
-
-  setInterval(next_slide, 2000);
-</script>
-
+        setInterval(next_slide, 2000);
+    </script>
 </body>
 </html>
