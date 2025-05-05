@@ -18,10 +18,12 @@ We believe that travel is more than just visiting places; it’s about creating 
 Join us in exploring the beauty, culture, and adventure that the world has to offer. Let’s make every journey extraordinary! ✨
 
 **How To Use**
+
 1. Open the website in any modern web browser.
 2. No Login/SignUp required- Just start exploring!
 
 **Future Plans**
+
 We aim to continuously improve the platform by:
   - Adding a blog page so that users can interact with eachother.
   - Adding proper booking options
