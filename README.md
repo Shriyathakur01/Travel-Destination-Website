@@ -8,8 +8,6 @@ Welcome to the **JetSet Journeys**—your passport to the world's most incredibl
 - 🏕️ Find curated travel experiences, from serene beaches to bustling cities.
 - 🌟 Unforgettable Experiences – Every destination has a unique story waiting to be discovered.
 - 🏛 Culture & Heritage – Explore ancient ruins, charming villages, and rich traditions.
-- 🚀 Personal Growth – Travel broadens the mind, introducing new perspectives and ideas.
-
 
 **OUR MISSION**
 
@@ -17,12 +15,12 @@ We believe that travel is more than just visiting places; it’s about creating 
 
 Join us in exploring the beauty, culture, and adventure that the world has to offer. Let’s make every journey extraordinary! ✨
 
-**How To Use**
+**HOW TO USE**
 
 1. Open the website in any modern web browser.
 2. No Login/SignUp required- Just start exploring!
 
-**Future Plans**
+**FUTURE PLANS**
 
 We aim to continuously improve the platform by:
   - Adding a blog page so that users can interact with eachother.
