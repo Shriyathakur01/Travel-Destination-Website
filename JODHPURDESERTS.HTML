@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JODHPURdocument</title>
+    <style>
+        * {
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .header {
+            background-color: rgb(15, 24, 33);
+            padding: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .head {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            padding: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .besttimetogo {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+        .besttimetogo a {
+            color: white;
+            border: none;
+            text-decoration: none;
+        }
+        .besttimetogo a:hover {
+            background-color: rgb(36, 47, 58);
+            padding: 10px;
+        }
+        .venue {
+            padding-left: 130px;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+        .slider-container {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-image: url('BIKANERMAIN.JPG');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            border-radius: 10px;
+            color: #333;
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 300px;
+            padding: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card img {
+            width: 100%;
+            transition-timing-function: ease-out;
+            border-radius: 10px;
+            height: 200px;
+        }
+        #btn {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #exbtn {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            font-weight: bolder;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translatey(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Styles for the automatic slider */
+        .slider-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding-bottom: 130px;
+            padding-top: 0spx;
+            background-image: url('Background(Jodhpur).jpeg');
+        }
+
+        .slider {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            padding-bottom: 50px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            display: block;
+            border: none;
+            height: 400px;
+        }
+        .text-image{
+            height:500px;
+            padding:0px;
+            width:45%;
+            padding-top: 190px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="text-image">
+            <h1>JODHPUR</h1><br>
+            <h3>Jodhpur, the 'Blue City' of Rajasthan, captivates visitors with its stunning blue-washed houses, towering forts, and vibrant bazaars. From the majestic Mehrangarh Fort to the serene Jaswant Thada and bustling Clock Tower market, Jodhpur offers a unique blend of culture, architecture, and desert charm that leaves an unforgettable impression.</h3>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1569001852726-323fd51b26f3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8am9kaHB1cnxlbnwwfHwwfHx8MA%3D%3D" alt="Mehrangarh Fort">
+                </div>
+                <div class="slide">
+                    <img src="https://www.transindiatravels.com/wp-content/uploads/umaid-bhawan-palace.jpg" alt="Umaid Bhawan Palace">
+                </div>
+                <div class="slide">
+                    <img src="https://beyondthebucketlist.co/wp-content/uploads/2023/05/DSC05150-600x460.jpg" alt="Jaswant Thada">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="things to do">
+        <div class="head">THINGS TO DO</div>
+        <div class="container">
+            <div class="card">
+                <img src="https://t3.ftcdn.net/jpg/03/44/49/56/360_F_344495688_nf4Cb95PV0tUClWMLdqNyQLY48SPqz4T.jpg">
+                <h3>Mehrangarh Fort</h3><br>
+                <button id="exbtn">SUGGESTED TIME<br>9AM-12PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank"><button id="btn">Unlock Your Adventure</button></a>
+            </div>
+            <div class="card">
+                <img src="https://t3.ftcdn.net/jpg/05/11/45/88/360_F_511458883_T1iJsHufNBUXX9COBU0FP4LRsZTmcTH9.jpg">
+                <h3>Umaid Bhawan Palace</h3><br>
+                <button id="exbtn">SUGGESTED TIME<br>10AM-1PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank"><button id="btn">Unlock Your Adventure</button></a>
+            </div>
+            <div class="card">
+                <img src="https://kevinstandagephotography.wordpress.com/wp-content/uploads/2017/03/jaswant-thada.jpg">
+                <h3>Jaswant Thada</h3><br>
+                <button id="exbtn">SUGGESTED TIME<br>8AM-9AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank"><button id="btn">Unlock Your Adventure</button></a>
+            </div>
+            <div class="card">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_232090285_20191121132113_20191121132136.jpg">
+                <h3>Mandore Gardens</h3><br>
+                <button id="exbtn">SUGGESTED TIME<br>7AM-9AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank"><button id="btn">Unlock Your Adventure</button></a>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjMg6Yk2widmdYdC3oDh_cAxzhQmw44DLSMg&s">
+                <h3>Toorji Ka Jhalra</h3><br>
+                <button id="exbtn">SUGGESTED TIME<br>8AM-10AM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank"><button id="btn">Unlock Your Adventure</button></a>
+            </div>
+            <div class="card">
+                <img src="https://www.tourmyindia.com/images/clock-tower3.jpg">
+                <h3>Clock Tower and Market</h3><br>
+                <button id="exbtn">SUGGESTED TIME<br>5PM-8PM</button><br><br>
+                <a href="https://www.agoda.com/" target="_blank"><button id="btn">Unlock Your Adventure</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function show_slide(index) {
+            const offset = -index * 100;
+            document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+        }
+
+        function next_slide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            show_slide(currentIndex);
+        }
+
+        setInterval(next_slide, 2000);
+    </script>
+</body>
+</html>
