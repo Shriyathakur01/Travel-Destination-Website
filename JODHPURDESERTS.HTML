@@ -8,83 +8,87 @@
         * {
             width: 100%;
             font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 0px;
+            padding: 0px;
         }
-        .header, .head, .besttimetogo {
+        .header {
+            background-color: rgb(15, 24, 33);
+            padding: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .head {
+            background-color: rgb(15, 24, 33);
+            color: white;
+            padding: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .besttimetogo {
             background-color: rgb(15, 24, 33);
             color: white;
             display: flex;
             justify-content: space-evenly;
             padding: 20px;
         }
-        .besttimetogo a, .header a {
+        .besttimetogo a {
             color: white;
+            border: none;
             text-decoration: none;
         }
         .besttimetogo a:hover {
             background-color: rgb(36, 47, 58);
             padding: 10px;
         }
+        .venue {
+            padding-left: 130px;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
         .slider-container {
             height: 500px;
+            width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url('Background(JODHPUR).jpeg');
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-image: url('BIKANERMAIN.JPG');
+            background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-        }
-        .text-image {
-            width: 45%;
-            color: white;
-            padding-top: 190px;
-        }
-        .slider {
-            width: 80%;
-            max-width: 600px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .slide {
-            min-width: 100%;
-        }
-        .slide img {
-            width: 100%;
-            height: 400px;
-            display: block;
         }
         .container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            width: 100%;
             gap: 20px;
             padding: 20px;
         }
         .card {
-            background: white;
-            border: 1px solid #ddd;
             border-radius: 10px;
+            color: #333;
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 300px;
             padding: 20px;
+            overflow: hidden;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         .card img {
             width: 100%;
-            height: 200px;
+            transition-timing-function: ease-out;
             border-radius: 10px;
+            height: 200px;
         }
         #btn {
             background-color: black;
             color: white;
             padding: 10px;
+            font-weight: bolder;
             border-radius: 10px;
             cursor: pointer;
         }
@@ -92,16 +96,65 @@
             background-color: white;
             color: black;
             padding: 10px;
+            font-weight: bolder;
             border-radius: 10px;
-            font-weight: bold;
+            cursor: pointer;
         }
+        .card:hover {
+            transform: translatey(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Styles for the automatic slider */
+        .slider-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding-bottom: 130px;
+            padding-top: 0spx;
+            background-image: url('Background(BIKANER).jpeg');
+        }
+
+        .slider {
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            padding-bottom: 50px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            display: block;
+            border: none;
+            height: 400px;
+        }
+        .text-image{
+            height:500px;
+            padding:0px;
+            width:45%;
+            padding-top: 190px;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
     <div class="slider-container">
         <div class="text-image">
             <h1>JODHPUR</h1><br>
-            <h3>Jodhpur, known as the 'Blue City' of India, is a vibrant destination in Rajasthan. Famous for the magnificent Mehrangarh Fort, Umaid Bhawan Palace, and its picturesque blue houses, Jodhpur offers a captivating blend of heritage, architecture, and culture. The city is also a gateway to the Thar Desert, making it ideal for those seeking historical exploration and desert adventures.</h3>
+            <h3>Jodhpur, the 'Blue City' of Rajasthan, captivates visitors with its stunning blue-washed houses, towering forts, and vibrant bazaars. From the majestic Mehrangarh Fort to the serene Jaswant Thada and bustling Clock Tower market, Jodhpur offers a unique blend of culture, architecture, and desert charm that leaves an unforgettable impression.</h3>
         </div>
         <div class="slider">
             <div class="slides">
@@ -139,8 +192,6 @@
                 <button id="exbtn">SUGGESTED TIME<br>8AM-9AM</button><br><br>
                 <a href="https://www.agoda.com/" target="_blank"><button id="btn">Unlock Your Adventure</button></a>
             </div>
-        </div>
-        <div class="container">
             <div class="card">
                 <img src="https://www.rajasthandirect.com/wp-content/uploads/2013/06/Mandore-Gardens.jpg">
                 <h3>Mandore Gardens</h3><br>
