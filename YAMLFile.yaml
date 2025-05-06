@@ -1,0 +1,21 @@
+project:
+  Name: Travel Destination Website
+  Description: A responsive website that allows users to explore, search, and learn
+    about various travel destinations across the world. It includes destination details,
+    images, and travel tips to help users plan their next trip.
+
+Team:
+  Members:
+    - Name: Shriya (2410991683)
+    - Name: Siya Surial (2410991690)
+    - Name: Swastik Jindal (2410991706)
+    - Name: Shourya (2410991671)
+    - Name: Siddhant (2410991686)
+
+Status: in-development
+
+Technologies Used:
+  - HTML
+  - CSS
+  - JavaScript
+  
